@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#WEB-INF#pages#registerResponse.xhtml"
+  PATH="/WEB-INF/pages/registerResponse.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#userRegistration.xhtml"
+  PATH="/userRegistration.xhtml" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#userRegistration.xhtml:0" NAME="item"
+   PATH="/userRegistration.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="SUCCEED::#WEB-INF#pages#registerResponse.xhtml" NAME="output"
+    PATH="/WEB-INF/pages/registerResponse.xhtml"
+    TARGET="rules:#WEB-INF#pages#registerResponse.xhtml" TITLE="SUCCEED" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

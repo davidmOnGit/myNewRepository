@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<h:outputStylesheet library="css" name="layout.css"></h:outputStylesheet>
+</h:head>
+<h:body>
+	<div id="wrapper">
+		<div id="title">
+			<h1>Der Headshop</h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<ui:repeat var="navigationItem" value="#{navigationBean.navigationEntries.keySet().toArray()}">
+					<li>
+						<a href="#{navigationBean.navigationEntries.get(navigationItem)}">#{navigationItem}</a>
+					</li>
+				</ui:repeat>
+			</ul>
+			<br />
+		</div>
+		<div id="main">
+			<ui:insert name="mainContent">
+				<p>Pack hier deine Inhalte rein!</p>
+			</ui:insert>
+		</div>
+	</div>
+</h:body>
+</html>

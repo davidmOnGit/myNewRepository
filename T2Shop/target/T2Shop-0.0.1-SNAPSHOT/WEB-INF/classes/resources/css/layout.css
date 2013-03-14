@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+#wrapper{
+	margin: auto;
+	width: 1200px;
+	border: medium solid;
+	border-color: black;	
+}
+#title{
+	margin: auto;
+	width: 200px;
+}
+#nav{
+	border-top: medium solid;
+	border-color: black;
+	padding-bottom: 10px;
+}
+#nav ul{
+	list-style: none outside none;
+}
+#nav ul li{
+	float: left;
+	margin-right: 15px;
+}
+#main{
+	border-top: medium solid;
+	border-color: black;
+	padding: 10px 10px 10px 10px;
+}
+#registrationForm{
+	width: 50px;
+}
